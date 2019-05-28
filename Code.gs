@@ -46,18 +46,19 @@ function generateCards() {
     var cardSlide = templateCard.duplicate(); // slide we're editing now
     sheetRow = dataValues[cardIndex + HEADER_ROWS]; // skip sheet headers, one row = one card
     var title = sheetRow[0];
-    var tier = sheetRow[1];
-    var cost = sheetRow[8];
+    var tier = sheetRow[2];
+    var cost = sheetRow[9];
     var benefit = sheetRow[16];
     var victory = sheetRow[18];
-    var played = sheetRow[19];
-    var bought = sheetRow[20];
+    var ability = sheetRow[19];
+    var flavor = sheetRow[20];
     cardSlide.replaceAllText('{title}', title);
     cardSlide.replaceAllText('{tier}', tier);
     cardSlide.replaceAllText('{cost}', cost);
     cardSlide.replaceAllText('{benefit}', benefit);
     cardSlide.replaceAllText('{victory}', victory);
-    cardSlide.replaceAllText('{ability}', played + '\n' + bought);
+    cardSlide.replaceAllText('{ability}', ability);
+    cardSlide.replaceAllText('{flavor}', flavor);
   }
 }
 
