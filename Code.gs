@@ -27,6 +27,6 @@ function onInstall(event) {
 function copyTemplateFile() {
   var copyTitle = 'Test Card Game ' + Utilities.formatDate(new Date(), "GMT-5", "yyyy-MM-dd HH:mm:ss");
   var template = DriveApp.getFileById(TEMPLATE_ID)
-  var presentationFile = template.makeCopy(copyTitle)
-  return presentationFile;
+  var deckFile = template.makeCopy(copyTitle)
+  return deckFile;
 }
