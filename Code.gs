@@ -22,6 +22,21 @@ function onInstall(event) {
 }
 
 /**
+ * Creates a deck of cards using the data in the user's Drive. 
+ */
+function generateCards() {
+  // Create a presentation from the cards template
+  var deck = copyTemplateFile()
+  
+  // Grab the card data from this Sheet.
+  var sheet = SpreadsheetApp.getActive().getSheetByName(DATA_SHEET_NAME);
+  var data = sheet.getDataRange();
+  var dataRows = data.getNumRows();
+  var dataCols = data.getNumColumns();
+  var dataValues = sheet.getDataRange().getValues();
+}
+
+/**
  * Prepares copy of card template to add our data
  */
 function copyTemplateFile() {
