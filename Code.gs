@@ -12,7 +12,7 @@
 // Default template ID.
 var TEMPLATE_ID = '1XnU1wxuIxXL0s0-Zvqc8v6QmqONpkjsdvfO3fvdBvE0';
 var CARDS_PER_ROW = 4;
-var DATA_SHEET_NAME = 'Cards ALL 6 res -deck';
+var DATA_SHEET_NAME = 'Cards 5 to 6 res';
 var HEADER_ROWS = 3;
 
 /**
